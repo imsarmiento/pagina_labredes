@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+  <title>W3.CSS Template</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Inconsolata"
+  />
+  <style>
+    body,
+    html {
+      height: 100%;
+      font-family: "Inconsolata", sans-serif;
+    }
+
+    .bgimg {
+      background-position: center;
+      background-size: cover;
+      background-image: url("/w3images/coffeehouse.jpg");
+      min-height: 75%;
+    }
+
+    .menu {
+      display: none;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+    }
+
+    .w3-tooltip,
+    .w3-display-container {
+      position: relative;
+      text-align: center;
+    }
+  </style>
+  <body>
+    <!-- Links (sit on top) -->
+    <div class="w3-top">
+      <div class="w3-row w3-padding w3-black">
+        <div class="w3-col s3">
+          <a href="#" class="w3-button w3-block w3-black">HOME</a>
+        </div>
+        <div class="w3-col s3">
+          <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
+        </div>
+        <div class="w3-col s3">
+          <a href="#menu" class="w3-button w3-block w3-black">VIDEOS</a>
+        </div>
+        <div class="w3-col s3">
+          <a href="#where" class="w3-button w3-block w3-black">IMAGENES</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Header with image -->
+    <header class="w3-display-container w3-grayscale-min" id="home">
+      <img src="home.jpg" class="image_h" />
+      <div class="w3-display-middle w3-center">
+        <span class="w3-text-white" style="font-size: 90px">
+          REDES <br />
+          Laboratorio 2</span
+        >
+      </div>
+    </header>
+
+    <!-- Add a background color and large text to the whole page -->
+    <div class="w3-sand w3-grayscale w3-large">
+      <!-- About Container -->
+      <div class="w3-container" id="about">
+        <div class="w3-content" style="max-width: 700px">
+          <h5 class="w3-center w3-padding-64">
+            <span class="w3-tag w3-wide">El equipo</span>
+          </h5>
+          <h6>Diego Gómez</h6>
+          <p>
+            Hola, me llamo Diego, soy el menor de 3 hermanos y nací en Cartagena
+            pero me crié en un pueblo aledaño llamado Turbaco. Desde niño me
+            gustó mucho el deporte y dibujar. Jugué todo lo que un niño puede
+            jugar en su infancia, desde tenis y ajedrez, hasta beisbol con palos
+            de escoba y fútbol con medias. En realidad no me importaba mucho el
+            qué y el cómo siempre y cuando pudiera disfrutar con mis amigos. En
+            mi adolescencia descubrí el amor que le tenía a la tecnología y el
+            poder que esta tenía para generar revoluciones sociales, culturales
+            y mejorar la vida de todos. Por ello decidí estudiar sistemas.
+            Actualmente intento sobrevivir a mi otra aventura, que ha sido el
+            pregrado en Matemáticas, uno de los gustos que también me
+            acompañaron desde niño y que intento llevar hasta mi vida adulta,
+            donde espero sea una herramienta que me ayude a contribuir al mundo
+            de manera positiva
+          </p>
+          <h6>Isabela Sarmiento</h6>
+          <p>
+            Yo me llamo Isabela, mis papás me pusieron así por que les gustaba
+            mucho una novela y así se llamaba la protagonista. Supongo que eso
+            también lo heredé por que me encantan las historias, en libros, en
+            series en películas y bueno, en novelas. De chiquita mis libros
+            favoritos eran los de Percy Jackson, y actualmente es La Casa de Los
+            Espíritus de Isabel Allende. Me gusta también dibujar, escribir y
+            bordar y estoy aprendiendo japonés.
+          </p>
+          <h6>Juan Sebastián Bautista</h6>
+          <p>
+            Hola, me llamo Diego, soy el menor de 3 hermanos y nací en Cartagena
+            pero me crié en un pueblo aledaño llamado Turbaco. Desde niño me
+            gustó mucho el deporte y dibujar. Jugué todo lo que un niño puede
+            jugar en su infancia, desde tenis y ajedrez, hasta beisbol con palos
+            de escoba y fútbol con medias. En realidad no me importaba mucho el
+            qué y el cómo siempre y cuando pudiera disfrutar con mis amigos. En
+            mi adolescencia descubrí el amor que le tenía a la tecnología y el
+            poder que esta tenía para generar revoluciones sociales, culturales
+            y mejorar la vida de todos. Por ello decidí estudiar sistemas.
+            Actualmente intento sobrevivir a mi otra aventura, que ha sido el
+            pregrado en Matemáticas, uno de los gustos que también me
+            acompañaron desde niño y que intento llevar hasta mi vida adulta,
+            donde espero sea una herramienta que me ayude a contribuir al mundo
+            de manera positiva
+          </p>
+        </div>
+      </div>
+
+      <!-- Menu Container -->
+      <div class="w3-container" id="menu">
+        <div class="w3-content" style="max-width: 700px">
+          <h5 class="w3-center w3-padding-48">
+            <span class="w3-tag w3-wide">Videos</span>
+            <div class="row d-lg-flex flex-row justify-content-around m-2">
+              <div class="col">
+                <video
+                  width="320"
+                  height="240"
+                  controls
+                  autoplay
+                  style="top: 0"
+                >
+                  <source src="./videos/v1.mp4" type="video/mp4" />
+                </video>
+              </div>
+              <div class="col-md-4">
+                <video width="320" height="240" controls autoplay>
+                  <source src="./videos/v2.mp4" type="video/mp4" />
+                </video>
+              </div>
+              <div class="col-md-4">
+                <video width="320" height="240" controls autoplay>
+                  <source src="./videos/v3.mp4" type="video/mp4" />
+                </video>
+              </div>
+              <div class="col-md-12">
+                <video width="320" height="240" controls autoplay>
+                  <source src="./videos/v4.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </div>
+          </h5>
+        </div>
+      </div>
+
+      <!-- Contact/Area Container -->
+      <div class="w3-container" id="where" style="padding-bottom: 32px">
+        <div class="w3-content" style="max-width: 700px">
+          <h5 class="w3-center w3-padding-48">
+            <span class="w3-tag w3-wide">Imágenes</span>
+            <div class="row" style="margin-top: 40px">
+              <div class="col-lg-4">
+                <img
+                  class="img-fluid"
+                  src="./imagenes/img1.jpg"
+                  alt="Communication tower"
+                  style="max-height: 160px; margin-left: 27%"
+                />
+              </div>
+              <div class="col-lg-4">
+                <img
+                  class="img-fluid"
+                  src="./imagenes/img2.jpg"
+                  alt="Internet"
+                  style="max-height: 160px; margin-left: 27%"
+                />
+              </div>
+              <div class="col-lg-4">
+                <img
+                  class="img-fluid"
+                  src="./imagenes/img3.jpg"
+                  alt="Radar"
+                  style="max-height: 160px"
+                />
+              </div>
+            </div>
+            <div class="row" style="margin-top: 30px; margin-bottom: 20px">
+              <div class="col-lg-4">
+                <img
+                  class="img-fluid"
+                  src="./imagenes/img4.jpg"
+                  alt="Satelite"
+                  style="max-height: 160px"
+                />
+              </div>
+              <div class="col-lg-4">
+                <img
+                  class="img-fluid"
+                  src="./imagenes/img5.jpg"
+                  alt="Router"
+                  style="max-height: 160px; margin-left: 27%"
+                />
+              </div>
+              <div class="col-lg-4">
+                <img
+                  class="img-fluid"
+                  src="./imagenes/img6.jpg"
+                  alt="telecomunicación 2"
+                  style="max-height: 160px"
+                />
+              </div>
+            </div>
+          </h5>
+        </div>
+      </div>
+
+      <script>
+        document.getElementById("vid").play();
+      </script>
+      <!-- End page content -->
+    </div>
+  </body>
+</html>
